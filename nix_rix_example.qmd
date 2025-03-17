@@ -1,0 +1,30 @@
+---
+title: "Nix/Rix Example"
+author: Jason Geller
+format:
+  html
+---
+
+# Load Packages
+
+
+```{r}
+library(palmerpenguins)
+library(brms)
+library(cmdstanr)
+```
+
+## Run Model
+
+Now we will run this Bayesian model
+
+```{r}
+
+model_normal <- brm(body_mass_g ~ flipper_length_mm,
+  family = gaussian(),
+  backend="cmdstanr", 
+  data = penguins
+)
+
+```
+
