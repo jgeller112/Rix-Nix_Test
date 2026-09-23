@@ -1,0 +1,5 @@
+result
+*.html
+*_files/
+.Rproj.user/
+.Rhistory
