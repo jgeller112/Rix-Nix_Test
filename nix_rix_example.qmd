@@ -2,7 +2,8 @@
 title: "Nix/Rix Example"
 author: Jason Geller
 format:
-  html
+  html: default
+  typst: default
 ---
 
 # Load Packages

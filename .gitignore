@@ -3,3 +3,5 @@ result
 *_files/
 .Rproj.user/
 .Rhistory
+*.pdf
+.quarto/
