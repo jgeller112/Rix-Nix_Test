@@ -8,11 +8,19 @@ format:
 
 # Load Packages
 
+```{r}
+library(palmerpenguins) # data
+library(brms) # run bayesian model
+library(cmdstanr) # cmdstan backend 
+```
+
+
+# Load data
 
 ```{r}
-library(palmerpenguins)
-library(brms)
-library(cmdstanr)
+
+data <- read.csv("jasongeller/data.csv") # load in data file from file
+
 ```
 
 ## Run Model
@@ -28,4 +36,3 @@ model_normal <- brm(body_mass_g ~ flipper_length_mm,
 )
 
 ```
-
